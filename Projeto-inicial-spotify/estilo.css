@@ -5,13 +5,28 @@
 
 /* ============== layout ============== */
 
+/* -- Body -- */
+html, body, .capa{
+	height: 100%;
+}
+
+body{
+	border: 1px solid red;
+	background: url('imagens/capa.png'),
+				url('imagens/ruido.png'),
+				linear-gradient(50deg,#ff4169,#7c26f8);				
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+
+}
+
 /* -- Barra de navegação -- */
 .img-logo{
 	height: 40px;
 	width: 132px;
 	display: block;
 	background: url('imagens/spotify.svg') no-repeat;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 	background-size: contain;
 	color: transparent;
 }
@@ -41,4 +56,54 @@ nav.navbar-transparente{
 	color: #9bf0e1;
 }
 
+/* -- Imagem de capa -- */
+.capa{
+	display: table;
+	width: 100%;
+}
+
+.texto-capa{
+	text-align: center;
+	color: white;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* -- Botoes -- */
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	padding: 10px 35px;
+	margin: 0px	15px;
+	text-transform: uppercase;
+	transition: background 0.4s, color 0.4s;
+}
+
+.btn-roxo{
+	background: #7c25f8;
+}
+
+.btn-roxo:hover{
+	background-color: #6207e3;
+	color: white;
+}
+
+.btn-branco{
+	border: 2px solid white;
+}
+
+.btn-branco:hover{
+	background-color: white;
+	color: black;
+}
+
+
 /* ============== tipografia ============== */
+h1{
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
